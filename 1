@@ -15,11 +15,17 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
+  - {name: 🇯🇵 日本1 @mfjdpindao-w1prf7o9, server: 156.246.91.101, port: 10086, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: DBaRv6DlTQyDVyYJqfVYDt4nxpmAzioIO1sorDPyzMM=:XPpEIOKYhvHvpMMcpXJJKCuC1QgH1gl8MKEurYl40UE=, tfo: false}
+  - {name: 🇯🇵 日本2 @mfjdpindao-n5hiqnfr, server: 156.246.92.210, port: 49474, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: haBtSMemqGP7YOzkA2MSOeyhLUl29BdkGyxveKvnPro=:TT8v7KvVBe5nycT7B54+WZc1WTvlVjNNvzLnGRXMBt0=, tfo: false}
+  - {name: 🇯🇵 日本3-mcnw3ql7, server: 154.83.92.41, port: 30622, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: 8hImEy9Wqs+Vd2HadWqTtBIs0nBMCJa7R1pUUYtBpBg=:f8TB+/7koL7//SD9QVHnF+jVSX0fTmMGIUVESFX+050=, tfo: false}
+  - {name: 🇬🇧 英国 @mfjdpindao, server: 91.208.92.226, port: 45277, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: mF9l15rJgn/XRWJh55i6BvKBc0pIfRF3ABu5iNt8TM4=:pm0e6Oi9uF3sQe2gfTbY29Hqnh/v/w2/UG1v1fs8ctA=, tfo: false}
+  - {name: 🇭🇰 香港1 @mfjdpindao-gqdlrkpx, server: 154.83.84.61, port: 41685, client-fingerprint: chrome, type: ss, cipher: 2022-blake3-aes-256-gcm, password: /eR9fyJbh7ZqWgfjdm6EIQB32UywZ7csID1w0XmPMkk=:tslpw5BTbswV3Rtqng5nQKDz8/HZzD8AfVrlhm5p12g=, tfo: false}
   - {name: 🇨🇳 CN-50Mbps-ipv6-动态ip不定期更换-无限量, server: dyipv6.pai3.uk, port: 55646, client-fingerprint: chrome, type: vless, uuid: c7003f4d-ead3-49ae-86ac-50f5ef8b5343, tls: false, tfo: false, skip-cert-verify: false, network: tcp}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
+      - 🇨🇳 CN-50Mbps-ipv6-动态ip不定期更换-无限量
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇸🇬 狮城节点
@@ -31,7 +37,11 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     proxies:
-      - 🇨🇳 CN-50Mbps-ipv6-动态ip不定期更换-无限量
+      - 🇯🇵 日本1 @mfjdpindao-w1prf7o9
+      - 🇯🇵 日本2 @mfjdpindao-n5hiqnfr
+      - 🇯🇵 日本3-mcnw3ql7
+      - 🇬🇧 英国 @mfjdpindao
+      - 🇭🇰 香港1 @mfjdpindao-gqdlrkpx
   - name: 📲 电报消息
     type: select
     proxies:
@@ -222,11 +232,13 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
-      - DIRECT
+      - 🇭🇰 香港1 @mfjdpindao-gqdlrkpx
   - name: 🇯🇵 日本节点
     type: select
     proxies:
-      - DIRECT
+      - 🇯🇵 日本1 @mfjdpindao-w1prf7o9
+      - 🇯🇵 日本2 @mfjdpindao-n5hiqnfr
+      - 🇯🇵 日本3-mcnw3ql7
   - name: 🇺🇲 美国节点
     type: select
     proxies:
