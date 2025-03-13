@@ -110,11 +110,11 @@ proxies:
   - {name: 🇭🇰 香港 @mfjdpindao-u2sulpuv, server: 91.229.133.166, port: 10482, client-fingerprint: chrome, type: vmess, uuid: 12f2f765-f042-4949-92c3-bff4f32076b9, alterId: 0, cipher: auto, tls: false}
   - {name: 🇸🇬 SG-007, server: 183.232.239.172, port: 16007, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 0GPQ1IUNFF4LE1W7}
   - {name: 傻逼节点,port: 37481,server: 46.17.41.217,type: hysteria2,udp: true,sni: www.bing.com,password: dongtaiwang.com,skip-cert-verify: true}
-  - {name: 直连 美国 04 [hysteria2] 1x,port: 10895,server: us-2503-5.ppaoyun.top,type: hysteria2,udp: true,password: fe17d8ec-e633-4715-8931-5840d6660bc1,skip-cert-verify: true}
-  - {name: 直连 美国 05 [hysteria2] 1x,port: 10896,server: us-2503-6.ppaoyun.top,type: hysteria2,udp: true,password: fe17d8ec-e633-4715-8931-5840d6660bc1,skip-cert-verify: true}
+  - {name: 直连 美国 041x,port: 10895,server: us-2503-5.ppaoyun.top,type: hysteria2,udp: true,password: fe17d8ec-e633-4715-8931-5840d6660bc1,skip-cert-verify: true}
+  - {name: 直连 美国 05 1x,port: 10896,server: us-2503-6.ppaoyun.top,type: hysteria2,udp: true,password: fe17d8ec-e633-4715-8931-5840d6660bc1,skip-cert-verify: true}
 
   - {name: 🇨🇭_CH_瑞士,type: ss,server: 84.17.53.160,port: 989,password: f8f7aCzcPKbsF8p3,ip-version: dual,cipher: aes-256-cfb}
-    - {name: https://t.me/fqzw9, server: 137.131.10.83, port: 25073, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA}, client-fingerprint: chrome, type: vless, uuid: 36b98d0b-958d-4d4a-c1b7-aaf1a7fa756a, tls: true, flow: xtls-rprx-vision, servername: www.speedtest.net, network: tcp}
+  - {name: https://t.me/fqzw9, server: 137.131.10.83, port: 25073, reality-opts: {public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA}, client-fingerprint: chrome, type: vless, uuid: 36b98d0b-958d-4d4a-c1b7-aaf1a7fa756a, tls: true, flow: xtls-rprx-vision, servername: www.speedtest.net, network: tcp}
   - {name: HK_👉🆔TG@anzhuoapk, server: bgp-xdd.blue-bgp.xyz, port: 34013, client-fingerprint: chrome, type: vmess, uuid: 59383c9f-700c-4767-9e5a-6c6e87669c3c, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 _US_美国, server: 151.101.192.155, port: 80, client-fingerprint: chrome, type: vless, uuid: b59cb9a9-a53f-4a80-9d63-7ce0a11990fe, tls: false, network: ws, ws-opts: {path: /wp-admin, headers: {Host: Niniban.com}}}
 
@@ -240,8 +240,8 @@ proxies:
 proxy-groups:
 proxy-groups:
   - name: 🚀 节点选择
-  type: select
-  proxies:
+type: select
+proxies:
     - 🇨🇳 CN-50Mbps-ipv6-动态ip不定期更换-无限量
     - 🇭🇰 香港节点
     - 🇨🇳 台湾节点
